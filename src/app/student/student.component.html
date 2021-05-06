@@ -1,0 +1,69 @@
+<!-- <h1 class="text-success">I am Student and Learning new Things</h1>
+<div class="container table-responsive jumbotron ">
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Student of students;">
+            <td>{{Student.id}}</td>
+            <td>{{Student.name}}</td>
+            <td>{{Student.age}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="container">
+    <select [(ngModel)]="selectedValue">
+        <option *ngFor="let Student of students;" [value]="Student.id">
+            {{Student.id}}
+        </option>
+    </select><br><br>
+
+<div class="container" [ngSwitch]="selectedValue">
+    <div *ngSwitchCase=101>{{getEmployee()|json}}</div>
+    <div *ngSwitchCase=102>{{getEmployee()|json}}</div>
+    <div *ngSwitchCase=103>{{getEmployee()|json}}</div>
+    <div *ngSwitchCase=104>{{getEmployee()|json}}</div>
+    <div *ngSwitchCase=105>{{getEmployee()|json}}</div>
+
+</div><br><br> -->
+
+<h1 class="text-success" style="text-transform:uppercase;">Welcome  to Student component</h1>
+<!-- <button type="button" class="btn btn-secondary">Secondary</button> -->
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Student of students;">
+            <td>{{Student.id}}</td>
+            <td>{{Student.name}}</td>
+            <td>{{Student.age}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="container">
+    <select [(ngModel)]="selectedValue">
+        <option *ngFor="let Student of students;" [value]="Student.id">
+            {{Student.id}}
+        </option>
+    </select><br><br>
+</div>
+<div  *ngForEach="let n of num;">{{n}}</div>
+
+<div class="container" [ngSwitch]="selectedValue">
+    <div *ngSwitchCase=1>{{check()|json}}</div>
+    <div *ngSwitchCase=2>{{check()|json}}</div>
+    <div *ngSwitchCase=3>{{check()|json}}</div>
+    <div *ngSwitchCase=4>{{check()|json}}</div>
+
+</div><br><br>
